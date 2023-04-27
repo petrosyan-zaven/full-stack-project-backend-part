@@ -16,6 +16,7 @@ async function register( req, res ) {
             res.send(JSON.stringify( {status:'Error Reigstering'} ));
         }
             res.send(JSON.stringify( {status: 'User Created'} ));
+            console.log(username);
     })
 }
 

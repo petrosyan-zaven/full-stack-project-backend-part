@@ -4,7 +4,7 @@ require('dotenv').config();
  const SECRET = process.env.SECRET;
 
  function authenticateToken(req, res, next) {
-    const token = req.headers.authorization;
+    const token = req.headers.authorization.split(' ')[1];
    
 
     if ( token == null) {
